@@ -21,3 +21,22 @@ def get_yearFounded(teams: Tuple[str, int, str, List[str]]) -> int:
 
 def get_topFivePlayers(teams: Tuple[str, int, str, List[str]]) -> List[str]:
     return teams[3]
+
+
+def players_by_teamName(match: List[str]) -> List[str]:
+    result = []
+    teamName = match[0]
+    for team in team_db:
+        team = get_teamName(team)
+        if team == teamName:
+            result = get_topFivePlayers()
+    return result
+
+def coach_by_teamName(match: List[str]) -> list[str]:
+    result = []
+    teamName = match[0]
+    for team in team_db:
+        team = get_teamName(team)
+        if team == teamName:
+            result.append(get_coach(team))
+    return result
