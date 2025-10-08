@@ -87,59 +87,44 @@ team_db: List[Tuple[str, int, int, List[str]]] = [
         1947,
         "jj redick",
         [
-        "LeBron James",
-        "Anthony Davis",
-        "",
-        "",
-        "",
+        "leBron james",
+        "anthony davis",
+        "austin reaves",
+        "rui hachimura",
+        "d'angelo russell",
         ]
     ),    (
-        "",
-        ,
-        "",
+        "minnesota timberwolves",
+        1989,
+        "chris finch",
         [
-        "",
-        "",
-        "",
-        "",
-        "",
+        "anthony edwards",
+        "rudy gobert",
+        "julius randle",
+        "mike conley",
+        "naz reid",
         ]
     ),    (
-        "",
-          ,
-        "",
+        "denver nuggets",
+        1967,
+        "michael mable",
         [
-        "",
-        "",
-        "",
-        "",
-        "",
+        "nikola jokić",
+        "jamal murray",
+        "michael porter jr.",
+        "aaron gordon",
+        "christian braun",
         ]
     ),    (
-      "",
-      ,
-      "",
+      "oklahoma city thunder",
+      2008,
+      "mark daignaeult",
         [
-        "",
-        "",
-        "",
-        "",
-        "",
+        "shai gilgeous-alexander",
+        "jalen williams",
+        "chet holmgren",
+        "lu dort",
+        "isaiah hartenstein",
         ]
-    ),    (
-      "",
-      ,
-      "",
-        [
-        "",
-        "",
-        "",
-        "",
-        "",
-        ]
-    ),
-
-    
-
-
+    )
 ]
