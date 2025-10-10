@@ -109,11 +109,10 @@ pa_list: List[Tuple[List[str], Callable[[List[str]], List[Any]]]] = [
     (str.split("what team was founded in _"), teamName_by_yearFounded),
     (str.split("who plays on the %"), players_by_teamName),
     (str.split("who was the coach of %"), coach_by_teamName),
-    (str.split("what movies were directed by %"), title_by_director),
-    (str.split("who acted in %"), actors_by_title),
-    (str.split("when was % made"), year_by_title),
-    (str.split("what years did % direct"), year_by_director),
-    (str.split("in what movies did % appear"), title_by_actor),
+    (str.split("what teams were founded between the years %"),  teamName_by_yearsBetween),
+    (str.split("what teams were founded after the year %"), teamName_by_yearsAfter),
+    (str.split("what teams were founded before the year %"), teamName_by_yearsBefore),
+    (str.split("what team does % coach"), teamName_by_coach),
     (["bye"], bye_action),
 ]
 
@@ -145,50 +144,6 @@ def query_loop() -> None:
             break
 
     print("\nSo long!\n")
-
-
-
-def bye_action(dummy: List[str]) -> None:
-    raise KeyboardInterrupt
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
