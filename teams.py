@@ -15,7 +15,7 @@ team_db: List[Tuple[str, int, int, List[str]]] = [
         "james harden",
         "norman powell",
         "ivica zubac",
-        "derrick jones jr.",
+        "derrick jones jr",
 
 
         ]
