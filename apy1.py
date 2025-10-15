@@ -181,6 +181,8 @@ assert sorted(teamName_by_yearFounded(["1967"])) == sorted(["houston rockets","d
 assert isinstance(teamName_by_player(["rudy gobert"]), list), "teamName_by_player not returning a list"
 assert sorted(teamName_by_player(["rudy gobert"])) == sorted(["minnesota timberwolves"]), "failed teamName_by_player test"
 
+assert sorted(search_pa_list(["what", "team", "does", "mark daignaeult", "coach"])) == sorted(["oklahoma city thunder"]), "Failed PA search"
+
 print("tests passed")
 
 
