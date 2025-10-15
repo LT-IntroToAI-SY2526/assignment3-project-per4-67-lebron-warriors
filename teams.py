@@ -72,7 +72,7 @@ team_db: List[Tuple[str, int, int, List[str]]] = [
         ]
     ),
         (
-        "clevand cavaliersclevand cavaliers",
+        "clevand cavaliers",
         1976,
         "kenny atkinson",
         [
