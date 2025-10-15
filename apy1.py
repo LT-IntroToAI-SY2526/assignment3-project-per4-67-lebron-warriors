@@ -110,7 +110,7 @@ def bye_action(dummy: List[str]) -> None:
 pa_list: List[Tuple[List[str], Callable[[List[str]], List[Any]]]] = [
     (str.split("what team was founded in _"), teamName_by_yearFounded),
     (str.split("who plays on the %"), players_by_teamName),
-    (str.split("who was the coach of %"), coach_by_teamName),
+    (str.split("who is the coach of %"), coach_by_teamName),
     (str.split("what teams were founded between the years %"),  teamName_by_yearsBetween),
     (str.split("what teams were founded after the year %"), teamName_by_yearsAfter),
     (str.split("what teams were founded before the year %"), teamName_by_yearsBefore),
@@ -181,6 +181,8 @@ assert isinstance(teamName_by_player(["rudy gobert"]), list), "teamName_by_playe
 assert sorted(teamName_by_player(["rudy gobert"])) == sorted(["minnesota timberwolves"]), "failed teamName_by_player test"
 
 assert sorted(search_pa_list(["what", "team", "does", "mark daignaeult", "coach"])) == sorted(["oklahoma city thunder"]), "Failed PA search"
+
+assert sorted(search_pa_list(["who", "is", "the", "coach", "of", "clevand cavaliers"])) == sorted(["kenny atkinson"]), "Failed 22PA search"
 
 print("tests passed")
 
