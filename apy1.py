@@ -96,7 +96,6 @@ def teamName_by_player(match: List[str]) -> list[str]:
         for topFivePlayers in players:
             if playerpicked in players:
                 result.append(get_teamName(teams))
-                print(result)
                 break
     return result 
 
