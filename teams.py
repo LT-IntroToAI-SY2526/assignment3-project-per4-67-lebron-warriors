@@ -10,7 +10,7 @@ team_db: List[Tuple[str, int, int, List[str]]] = [
         "los angeles clippers",
         1970 ,
         "tyronn lae",
-        [
+        [ #topFivePlayers
         "kawhi leonard",
         "james harden",
         "norman powell",
@@ -72,7 +72,7 @@ team_db: List[Tuple[str, int, int, List[str]]] = [
         ]
     ),
         (
-        "clevand cavaliers",
+        "clevand cavaliersclevand cavaliers",
         1976,
         "kenny atkinson",
         [
