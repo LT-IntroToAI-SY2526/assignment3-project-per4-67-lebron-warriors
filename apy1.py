@@ -186,6 +186,8 @@ assert sorted(search_pa_list(["who", "is", "the", "coach", "of", "clevand cavali
 
 print("tests passed")
 
+query_loop()
+
 
 
 
